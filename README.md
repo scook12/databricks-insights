@@ -3,15 +3,15 @@ A repository demonstrating the use of Databricks Spark clusters from within the 
 
 ## About
 Scaling business intelligence is a challenge. Combining Spark managed by Databricks with ArcGIS Insights can make it easier.
-You can read more about the process and analysis (here.)[https://www.esri.com/arcgis-blog/products/insights/analytics/business-intelligence-at-scale-leveraging-apache-spark-within-arcgis-insights/]
+You can read more about the process and analysis [here.](https://www.esri.com/arcgis-blog/products/insights/analytics/business-intelligence-at-scale-leveraging-apache-spark-within-arcgis-insights/)
 
-Want the same thing for ArcGIS Pro Notebooks? Check out @mraad's repository (here.)[https://github.com/mraad/spark-esri]
+Want the same thing for ArcGIS Pro Notebooks? Check out @mraad's repository [here.](https://github.com/mraad/spark-esri)
 
 ## Prereqs
-- conda installed and accessible in your path environment variable (docs)[https://docs.anaconda.com/anaconda/install/]
+- conda installed and accessible in your path environment variable [docs](https://docs.anaconda.com/anaconda/install/)
 - java 8 installed and selected as the default (installation and setup varies by platform)
-- ArcGIS Insights Desktop client (download here)[https://www.esri.com/en-us/arcgis/products/arcgis-insights/resources/desktop-client-download]
-- A Databricks Subscription (free trial)[https://docs.databricks.com/getting-started/try-databricks.html]
+- ArcGIS Insights Desktop client [download here](https://www.esri.com/en-us/arcgis/products/arcgis-insights/resources/desktop-client-download)
+- A Databricks Subscription [free trial](https://docs.databricks.com/getting-started/try-databricks.html)
 
 ## Setup
 `conda env create -f insights-dbc.yml`
@@ -35,7 +35,7 @@ Make sure you have the following available from your Databricks environment befo
 - Cluster ID
 - Port
 
-You can find details on these configs in the (Databricks Connect docs)[https://docs.databricks.com/dev-tools/databricks-connect.html#step-2-configure-connection-properties]
+You can find details on these configs in the [Databricks Connect docs](https://docs.databricks.com/dev-tools/databricks-connect.html#step-2-configure-connection-properties)
 
 Next, interactively configure the Databricks environment:
 
@@ -66,7 +66,7 @@ From ArcGIS Insights, launch the scripting console from the top right corner and
 
 Congrats! You now have an ArcGIS Insights kernel that will remotely execute Spark jobs on your Databricks cluster.
 
-The insights-spark-well-clusters notebook is an export from Insights that demonstrates what I did for my first test of this environment. To reproduce it, add (this data)[https://hifld-geoplatform.opendata.arcgis.com/datasets/oil-and-natural-gas-wells/data] to your DBFS. It's HIFLD's dataset for North American Oil and Gas Wells and the notebook trains a very simple k-means model to perform clustering on that dataset.
+The insights-spark-well-clusters notebook is an export from Insights that demonstrates what I did for my first test of this environment. To reproduce it, add [this data](https://hifld-geoplatform.opendata.arcgis.com/datasets/oil-and-natural-gas-wells/data) to your DBFS. It's HIFLD's dataset for North American Oil and Gas Wells and the notebook trains a very simple k-means model to perform clustering on that dataset.
 
 ## License
 
