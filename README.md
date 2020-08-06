@@ -3,6 +3,7 @@ A repository demonstrating the use of Databricks Spark clusters from within the 
 
 ## About
 Scaling business intelligence is a challenge. Combining Spark managed by Databricks with ArcGIS Insights can make it easier.
+You can read more about the process and analysis (here.)[https://www.esri.com/arcgis-blog/products/insights/analytics/business-intelligence-at-scale-leveraging-apache-spark-within-arcgis-insights/]
 
 Want the same thing for ArcGIS Pro Notebooks? Check out @mraad's repository (here.)[https://github.com/mraad/spark-esri]
 
