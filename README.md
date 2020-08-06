@@ -14,12 +14,15 @@ Want the same thing for ArcGIS Pro Notebooks? Check out @mraad's repository (her
 
 ## Setup
 `conda env create -f insights-dbc.yml`
+
 `conda activate insights-dbc`
 
 When that's done, ensure that databricks-connect was successfully installed and respects your pyspark path:
+
 `databricks-connect get-spark-home`
 
 If that fails with `CommandNotFound`, run:
+
 `pip install databricks-connect==6.5 # replace 6.5 with your cluster version`
 
 Make sure you have the following available from your Databricks environment before moving on:
@@ -34,12 +37,15 @@ Make sure you have the following available from your Databricks environment befo
 You can find details on these configs in the (Databricks Connect docs)[https://docs.databricks.com/dev-tools/databricks-connect.html#step-2-configure-connection-properties]
 
 Next, interactively configure the Databricks environment:
+
 `databricks-connect configure`
 
 And, test that configuration:
+
 `databricks-connect test # Warning: this will start your Databricks cluster if it isn't already up`
 
 If you passed all the tests, you can spin up the kernel gateway for Insights with:
+
 `chmod +x start_kernel.sh && ./start_kernel.sh  # mac/linux/wsl only`
 
 Or run the command yourself:
